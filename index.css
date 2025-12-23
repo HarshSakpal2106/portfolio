@@ -598,6 +598,7 @@ hr {
        left: -100%;
        top: 0;
        transition: left 0.5s ease;
+      box-sizing: border-box;
    }
 
     #detailsBackBtn {
