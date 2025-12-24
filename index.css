@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jersey+10&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
 html,
 body {
    margin: 0;
@@ -8,7 +10,10 @@ body {
    outline: none;
    background-color: #14141F;
    color: var(--text);
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: "Saira", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-variation-settings: "wdth" 100;
 }
 
 html.no-scroll,
@@ -100,6 +105,10 @@ header {
 
 header span {
    color: var(--text);
+   font-family: "Jersey 10", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 24px;
 }
 
 #menuBtn {
@@ -112,7 +121,13 @@ header span {
    padding: 8px 12px;
    border-radius: 8px;
    display: flex;
+   justify-content: center;
+   align-items: center;
    gap: 10px;
+   font-family: "Saira", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-variation-settings: "wdth" 100;
 }
 
 #menuBtn:hover {
@@ -136,6 +151,10 @@ header span {
    transition: transform 0.35s ease;
    z-index: 2000;
    box-sizing: border-box;
+   font-family: "Nunito", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
 }
 
 #menu.active {
@@ -221,6 +240,10 @@ header span {
    transition: all 0.2s ease;
    cursor: pointer;
    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+   font-family: "Nunito", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
 }
 
 #downloadResumeBtn:hover {
@@ -234,6 +257,9 @@ header span {
 #projectSection h1 {
    margin: 40px 0px 0px;
    text-align: center;
+   font-family: "Archivo Black", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 #projectsContainer {
@@ -333,6 +359,9 @@ header span {
 #skillSection h1 {
    text-align: center;
    margin: 0;
+   font-family: "Archivo Black", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 #skillContainer {
@@ -358,6 +387,9 @@ header span {
 
 #educationSection h1 {
    text-align: center;
+   font-family: "Archivo Black", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 #educationContainer {
@@ -372,7 +404,7 @@ header span {
    border-radius: 15px;
    padding: 15px;
    box-sizing: border-box;
-   height: 100px;
+   height: 150px;
 }
 
 .eduCard h3 {
@@ -444,6 +476,10 @@ hr {
 #footerLinks a,
 #footerLinks span {
    width: fit-content;
+   font-family: "Nunito", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
 }
 
 #footerLinks i {
@@ -464,7 +500,7 @@ hr {
 
 /* DESKTOP */
 @media (min-width: 769px) {
-    
+   
    body {
       display: flex;
       flex-direction: column;
@@ -644,60 +680,60 @@ hr {
    }
    
    #detailsSection {
-       height: 100%;
-       width: 100%;
-       z-index: 1000;
-       padding-top: 50px;
-       position: relative;
-       background-color: #14141F;
-       position: fixed;
-       left: -100%;
-       top: 0;
-       transition: left 0.5s ease;
+      height: 100%;
+      width: 100%;
+      z-index: 1000;
+      padding-top: 50px;
+      position: relative;
+      background-color: #14141F;
+      position: fixed;
+      left: -100%;
+      top: 0;
+      transition: left 0.5s ease;
       box-sizing: border-box;
    }
-
-    #detailsBackBtn {
-        color: var(--text);
-        font-size: 1.2rem;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 5px 10px;
-        border-radius: 15px;
-        box-sizing: border-box;
-        transition: all 0.2s ease;
-        border: none;
-        background: none;
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        transform: translateY(-50%);
-        margin: 0;
-    }
-
-    #detailsBackBtn:hover {
-        background: rgba(255, 255, 255, 0.08);
-        color: var(--accent);
-        backdrop-filter: blur(4px);
-        transition: all 0.2s ease;
-    }
-    
-    #projDetailsContainer {
-        height: 100%;
-        width: 100%;
-    }
-
-    .projDetails {
-        height: 100%;
-        width: 100%;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        font-size: 50px;
-    }
+   
+   #detailsBackBtn {
+      color: var(--text);
+      font-size: 1.2rem;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 5px 10px;
+      border-radius: 15px;
+      box-sizing: border-box;
+      transition: all 0.2s ease;
+      border: none;
+      background: none;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      transform: translateY(-50%);
+      margin: 0;
+   }
+   
+   #detailsBackBtn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--accent);
+      backdrop-filter: blur(4px);
+      transition: all 0.2s ease;
+   }
+   
+   #projDetailsContainer {
+      height: 100%;
+      width: 100%;
+   }
+   
+   .projDetails {
+      height: 100%;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+   }
    
    #skillSection h1 {
       font-size: 40px;
@@ -818,4 +854,4 @@ hr {
    #footerSection {
       scroll-margin-top: 90px;
    }
-}
+      }
